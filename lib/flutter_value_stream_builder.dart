@@ -5,9 +5,9 @@ import 'package:rxdart/streams.dart';
 
 class ValueStreamBuilder<T> extends StreamBuilder<T> {
   ValueStreamBuilder({
-    Key key,
-    @required ValueStream<T> valueStream,
-    @required AsyncWidgetBuilder<T> builder,
+    Key? key,
+    required ValueStream<T> valueStream,
+    required AsyncWidgetBuilder<T> builder,
   }) : super(
           key: key,
           initialData: valueStream.value,
