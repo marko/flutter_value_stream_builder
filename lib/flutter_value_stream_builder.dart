@@ -10,7 +10,7 @@ class ValueStreamBuilder<T> extends StreamBuilder<T> {
     required AsyncWidgetBuilder<T> builder,
   }) : super(
           key: key,
-          initialData: valueStream.value,
+          initialData: valueStream.valueOrNull,
           stream: valueStream,
           builder: builder,
         );
